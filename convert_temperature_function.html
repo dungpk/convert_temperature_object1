@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Circle</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+</body>
+
+<script>
+
+    function Temperature(celcius) {
+        this.temperature = celcius;
+        this.convertCtoF = function () {
+            return 1.8*celcius+32;
+        }
+        this.convertCtoK = function () {
+            return celcius+273.15;
+        }
+    }
+
+    temp  = new Temperature(34);
+    alert("Quy doi nhiet do sang do F la: "+temp.convertCtoF());
+    alert("Quy doi nhiet do sang do K la: "+temp.convertCtoK());
+
+</script>
+
+</html>
